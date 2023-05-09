@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Chanqo - Trade Your Views</title> -->
+    <title>Chanqo | Opinion Trading App</title>
+    <link rel="icon" href="images/red_logo_length.png" />
+    <!-- styling -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="page2.css" />
+    <link rel="stylesheet" href="page3.css" />
+    <link rel="stylesheet" href="page4.css" />
+    <link rel="stylesheet" href="download.css" />
+    <!-- font connection and logo connection  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- amplitude -->
+    <script type="text/javascript">
+      (function (e, t) {
+        var n = e.amplitude || { _q: [], _iq: {} };
+        var r = t.createElement("script");
+        r.type = "text/javascript";
+        r.integrity =
+          "sha384-+EO59vL/X7v6VE2s6/F4HxfHlK0nDUVWKVg8K9oUlvffAeeaShVBmbORTC2D3UF+";
+        r.crossOrigin = "anonymous";
+        r.async = true;
+        r.src = "https://cdn.amplitude.com/libs/amplitude-8.17.0-min.gz.js";
+        r.onload = function () {
+          if (!e.amplitude.runQueuedFunctions) {
+            console.log("[Amplitude] Error: could not load SDK");
+          }
+        };
+        var i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i);
+        function s(e, t) {
+          e.prototype[t] = function () {
+            this._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+            return this;
+          };
+        }
+        var o = function () {
+          this._q = [];
+          return this;
+        };
+        var a = [
+          "add",
+          "append",
+          "clearAll",
+          "prepend",
+          "set",
+          "setOnce",
+          "unset",
+          "preInsert",
+          "postInsert",
+          "remove",
+        ];
+        for (var c = 0; c < a.length; c++) {
+          s(o, a[c]);
+        }
+        n.Identify = o;
+        var u = function () {
+          this._q = [];
+          return this;
+        };
+        var l = [
+          "setProductId",
+          "setQuantity",
+          "setPrice",
+          "setRevenueType",
+          "setEventProperties",
+        ];
+        for (var p = 0; p < l.length; p++) {
+          s(u, l[p]);
+        }
+        n.Revenue = u;
+        var d = [
+          "init",
+          "logEvent",
+          "logRevenue",
+          "setUserId",
+          "setUserProperties",
+          "setOptOut",
+          "setVersionName",
+          "setDomain",
+          "setDeviceId",
+          "enableTracking",
+          "setGlobalUserProperties",
+          "identify",
+          "clearUserProperties",
+          "setGroup",
+          "logRevenueV2",
+          "regenerateDeviceId",
+          "groupIdentify",
+          "onInit",
+          "logEventWithTimestamp",
+          "logEventWithGroups",
+          "setSessionId",
+          "resetSessionId",
+        ];
+        function v(e) {
+          function t(t) {
+            e[t] = function () {
+              e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          }
+          for (var n = 0; n < d.length; n++) {
+            t(d[n]);
+          }
+        }
+        v(n);
+        n.getInstance = function (e) {
+          e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase();
+          if (!Object.prototype.hasOwnProperty.call(n._iq, e)) {
+            n._iq[e] = { _q: [] };
+            v(n._iq[e]);
+          }
+          return n._iq[e];
+        };
+        e.amplitude = n;
+      })(window, document);
+      amplitude.getInstance().init("0e495f6a019c331ae41576aba184c740", null, {
+        saveEvents: true,
+        includeUtm: true,
+        includeReferrer: true,
+      });
+      // send an event
+      amplitude.getInstance().logEvent("Download-Page");
+    </script>
+  </head>
+
+  <body>
+    <div style="display: flex; justify-content: center">
+      <a href="index.html">
+        <img src="images/white-logo.png" style="width: 200px" />
+      </a>
+    </div>
+    <div class="download-steps">
+      <p class="steps-heading">Steps</p>
+      <p class="steps">
+        1. Tap 'Ok' to complete download.<br />
+        Don't Worry Chanqo is 100% Safe & Secure
+      </p>
+      <p class="steps">
+        2. After Downloading 'apk' file go to 'File Manager' to install the
+        same. <br />Kindly note that chrome does not allow for installation via
+        chrome.
+      </p>
+      <p class="steps">3. Approve the installation from unknow source.</p>
+      <p class="steps">
+        4. Click on 'install anyway'. After that app will be installed on your
+        phone.
+      </p>
+    </div>
+    <!-- javascript -->
+    <script>
+      var a = document.createElement("a");
+      // a.setAttribute("href", "app-release.apk");
+      // a.setAttribute("download", "chanqo.apk");
+      a.href = "app-release.apk";
+      a.download = "chanqo.apk";
+      a.click();
+    </script>
+  </body>
+</html>

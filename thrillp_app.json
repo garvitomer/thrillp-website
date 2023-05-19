@@ -1,6 +1,6 @@
 {
   "is_app_working": false,
-  "not_working_reason": "App is under maintenance.Please try later",
+  "not_working_reason": "App is under maintenance\nPlease try later",
   "membership_plans": [
     { "duration": "1 Month", "price": 399, "savings": 0, "months": 1 },
     { "duration": "3 Month", "price": 299, "savings": 25, "months": 3 },
